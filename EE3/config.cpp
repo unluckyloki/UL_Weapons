@@ -46,7 +46,7 @@ class CfgWeapons
 	class UL_Weapons_EE3: Rifle_Base_F /// Just basic values common for all testing rifle variants
 	{
         scope=2;
-		displayName="[UL] EE-3 Carabine";
+		displayName="[UL] EE-3 Carabine (black)";
 		model="\UL_Weapons\EE3\EE3.p3d";
 		hiddenSelections[] = {"camo1","camo2","camo3"};
 		hiddenSelectionsTextures[]={
@@ -59,7 +59,7 @@ class CfgWeapons
 			"\UL_Weapons\EE3\tex\EE3_stock.rvmat",
 			"\UL_Weapons\EE3\tex\EE3_scope.rvmat"
 		};
-		picture="\UL_Weapons\EE3\tex\EE3_ui.paa";
+		picture="\UL_Weapons\EE3\tex\EE3_black_ui.paa";
 		magazines[]={"UL_Weapons_EE3_Mag"};
 		reloadAction="GestureReloadMX"; /// MX hand animation actually fits this rifle well
 		handAnim[]={
@@ -209,15 +209,25 @@ class CfgWeapons
 			maxRange = 400; maxRangeProbab = 0.3; 
         };
     };
+
+	class UL_Weapons_EE3_cream:UL_Weapons_EE3{
+		displayName="[UL] EE-3 Carabine (cream)";
+		hiddenSelectionsTextures[]={
+			"\UL_Weapons\EE3\tex\EE3_1_CO.paa",
+			"\UL_Weapons\EE3\tex\EE3_cream_2_CO.paa",
+			"\UL_Weapons\EE3\tex\EE3_1_CO.paa"
+		};
+		picture="\UL_Weapons\EE3\tex\EE3_cream_ui.paa";
+	};
 };
 
 class CfgMagazines{
 	class 7Rnd_408_Mag;
 	class UL_Weapons_EE3_Mag:7Rnd_408_Mag{
-		displayName="[UL] EE-3 20rnd Charge Cell";
-		descriptionShort="8 rounds charge cell for KSP-63";
+		displayName="[UL] EE-3 40rnd Charge Cell";
+		descriptionShort="40 rounds charge cell for EE-3 carabine";
 		mass=8;
-		count=20;
+		count=40;
 		tracersEvery=1;
 		initSpeed=900;
 		lastRoundTracer=200;
