@@ -112,7 +112,7 @@ class CfgWeapons
 		descriptionShort="EE-3 Carabine";
 		modelOptics="\A3\Weapons_f\acc\reticle_TWS.p3d"; //modelOptics="\UL_Weapons\EE3\sight\A3_2d_optic_marksmen.p3d";
 		maxZeroing=2000;
-		opticsZoomMin=0.1;
+		opticsZoomMin=0.075;
 		opticsZoomMax=1.25;
 		opticsZoomInit=1;
 		distanceZoomMin=100;
@@ -123,7 +123,7 @@ class CfgWeapons
 			"NVG",
 			"TI"
 		};
-		thermalMode[]={0,2};
+		thermalMode[]={4,5,6};
 		opticsFlare=1;
 		hasbipod=1;
 		caseless[]={
@@ -165,8 +165,8 @@ class CfgWeapons
 					1
 				};
 			};
-            reloadTime = 0.25;
-			dispersion = 0;
+            reloadTime = 0.1;
+			dispersion = 0.015;
 
 			//recoil = "EE3_recoil";
 			//recoilProne = "EE3_recoil";
@@ -198,7 +198,7 @@ class CfgWeapons
 					1
 				};
 			};
-            reloadTime = 0.25;
+            reloadTime = 0.4;
 			dispersion = 0;
 
 			//recoil = "EE3_recoil"; /// defined in cfgRecoils
